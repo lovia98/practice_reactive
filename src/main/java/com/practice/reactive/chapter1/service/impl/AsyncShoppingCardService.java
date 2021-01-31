@@ -17,14 +17,6 @@ public class AsyncShoppingCardService implements ShoppingCardService {
 
     private RestTemplate restTemplate = new RestTemplate();
 
-    /**
-     * 처리 하는 부분을 별도의 쓰레드에서 처리 할 수 있지만,
-     * 1. 쓰레드 풀에 대한 관리가 필요.
-     * 2. javascript와 같은 콜백 지옥이 생길 수도 있을듯.
-     *
-     * @param value
-     * @param c
-     */
     @Override
     public void calculate(Input value, Consumer<Output> c) {
         new Thread(() -> {

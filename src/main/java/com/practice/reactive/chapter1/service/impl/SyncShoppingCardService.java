@@ -13,12 +13,9 @@ import java.util.function.Consumer;
 @Service("syncShoppingCardService")
 public class SyncShoppingCardService implements ShoppingCardService {
 
-    /**
-     * calculate 함수에 콜백 함수를 전달
-     */
     @Override
     public void calculate(Input value, Consumer<Output> c) {
-        Output output = new Output(value.getAmount() * value.getPrice());
+        Output output = new Output(value.getAmount(), value.getPrice());
         c.accept(output);
     }
 }

@@ -14,6 +14,6 @@ public class ExampleCtrl {
 
     @GetMapping("/example1")
     public ResponseEntity<Output> example1(Input input) {
-        return new ResponseEntity<>(new Output(input.getAmount() * input.getPrice()), HttpStatus.OK);
+        return new ResponseEntity<>(new Output(input.getAmount(),input.getPrice()), HttpStatus.OK);
     }
 }

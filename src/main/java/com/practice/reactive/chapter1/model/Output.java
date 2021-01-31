@@ -9,7 +9,7 @@ public class Output {
 
     private int result;
 
-    public Output(int result) {
-        this.result = result;
+    public Output(int amout, int price) {
+        this.result = amout * price;
     }
 }
