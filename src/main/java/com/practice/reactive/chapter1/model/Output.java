@@ -1,0 +1,15 @@
+package com.practice.reactive.chapter1.model;
+
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+
+@Getter
+@NoArgsConstructor
+public class Output {
+
+    private int result;
+
+    public Output(int result) {
+        this.result = result;
+    }
+}
