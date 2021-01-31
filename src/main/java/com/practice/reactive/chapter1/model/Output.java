@@ -12,4 +12,8 @@ public class Output {
     public Output(int amout, int price) {
         this.result = amout * price;
     }
+
+    public Output(int result) {
+        this.result = result;
+    }
 }

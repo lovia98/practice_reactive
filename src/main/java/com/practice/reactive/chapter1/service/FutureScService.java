@@ -5,7 +5,7 @@ import com.practice.reactive.chapter1.model.Output;
 
 import java.util.concurrent.Future;
 
-public interface FutureShoppingCardService {
+public interface FutureScService {
 
     Future<Output> calculate(Input value);
 }
