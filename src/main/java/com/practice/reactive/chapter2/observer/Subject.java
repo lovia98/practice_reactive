@@ -1,4 +1,4 @@
-package com.practice.reactive.chapter2;
+package com.practice.reactive.chapter2.observer;
 
 public interface Subject<T> {
     void registerObserver(Observer<T> observer);

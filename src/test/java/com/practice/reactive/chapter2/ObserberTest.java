@@ -1,8 +1,10 @@
 package com.practice.reactive.chapter2;
 
-import com.practice.reactive.chapter2.impl.ConcreateObserverA;
-import com.practice.reactive.chapter2.impl.ConcreateObserverB;
-import com.practice.reactive.chapter2.impl.ConcreateSubject;
+import com.practice.reactive.chapter2.observer.impl.ConcreateObserverA;
+import com.practice.reactive.chapter2.observer.impl.ConcreateObserverB;
+import com.practice.reactive.chapter2.observer.impl.ConcreateSubject;
+import com.practice.reactive.chapter2.observer.Observer;
+import com.practice.reactive.chapter2.observer.Subject;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 
