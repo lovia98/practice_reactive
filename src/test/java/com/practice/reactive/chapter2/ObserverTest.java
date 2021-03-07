@@ -8,7 +8,7 @@ import com.practice.reactive.chapter2.observer.Subject;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 
-public class ObserberTest {
+public class ObserverTest {
 
     /**
      * 구독자 타입을 원하는대로 교체하여 주입
